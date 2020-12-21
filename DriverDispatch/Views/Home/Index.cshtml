@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Driver Dispatch";
+}
+
+<div>
+    <div class="row">
+        <div class="col-6">
+            <h3>ABBA - </h3>
+            <div></div>
+        </div>
+		<div class="col-6">
+			<h3>CXT13 - </h3>
+			<div></div>
+		</div>
+    </div>
+    <div>
+		<div class="col-6">
+			<h3>CXT15 - </h3>
+			<div></div>
+		</div>
+		<div class="col-6">
+			<h3>CXT6 - </h3>
+			<div></div>
+		</div>
+    </div>
+</div>
+
+<script>
+	$(function () {
+		$.ajax({
+			url: "api/DriverAssistance/Get",
+			type: "post",
+			contentType: "application/json;charset=utf-8",
+			success: ListDriversAssitance
+		});
+	});
+
+	function ListDriversAssitance(data) {
+
+	}
+</script>
