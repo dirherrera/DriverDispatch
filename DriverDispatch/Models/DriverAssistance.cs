@@ -6,13 +6,6 @@ using System.Threading.Tasks;
 namespace DriverDispatch.Models
 {
 
-	public interface IDriverAssistance
-	{
-
-		public 
-
-	}
-
 	public class DriverAssistance
 	{
 
@@ -21,8 +14,8 @@ namespace DriverDispatch.Models
 		public string DRVCLASS { get; set; }
 		public string TRUCKID { get; set; }
 		public string STATUS { get; set; }
-		public string DATEIN { get; set; }
-		public string DATEOUT { get; set; }
+		public DateTime DATEIN { get; set; }
+		public DateTime DATEOUT { get; set; }
 		public string INYARD { get; set; }
 		public string GROUP { get; set; }
 		public string EVENT { get; set; }
@@ -32,3 +25,4 @@ namespace DriverDispatch.Models
 	}
 
 }
+

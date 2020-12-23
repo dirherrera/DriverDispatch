@@ -1,7 +1,4 @@
-﻿using Microsoft.CodeAnalysis.CSharp.Syntax;
-using Microsoft.Data.SqlClient;
-using Microsoft.EntityFrameworkCore.Storage;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Common;
@@ -10,9 +7,9 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace NetCoreApp
+namespace DriverDispatch
 {
-	public class DataBaseConnection
+	public class DBContext
 	{
 		
 		//public static string connString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\Programador 2\Documents\David Ramos\Poyectos\NetCoreApp\DataBase\App_Data\Database.mdf"";Integrated Security=True";

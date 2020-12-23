@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using DriverDispatch.Models;
+using DriverDispatch.Data;
 
 namespace DriverDispatch.Controllers
 {
@@ -16,14 +17,13 @@ namespace DriverDispatch.Controllers
 		public HomeController(ILogger<HomeController> logger)
 		{
 			_logger = logger;
-
 		}
 
 		public IActionResult Index()
 		{
 			return View();
 
-			ViewBag.DriversAssistance = 
+			ViewBag.DriversAssistance = Queries.DriverDispatchResult();
 
 		}
 

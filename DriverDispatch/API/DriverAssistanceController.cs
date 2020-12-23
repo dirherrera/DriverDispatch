@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using DriverDispatch.Data;
 
 namespace DriverDispatch.API
 {
@@ -16,7 +17,7 @@ namespace DriverDispatch.API
 		[HttpPost("Get")]
 		public ActionResult<string> Get()
 		{
-
+			return Queries.DriverDispatchResult();
 		}
 
 	}
